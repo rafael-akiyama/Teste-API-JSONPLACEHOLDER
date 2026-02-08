@@ -1,6 +1,5 @@
 # Dependências
 node_modules/
-package-lock.json
 
 # Relatórios (opcional - você pode querer versionar os relatórios)
 # newman/reports/*.html
