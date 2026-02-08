@@ -1,0 +1,25 @@
+{
+  "name": "api-tests-postman",
+  "version": "1.0.0",
+  "description": "Testes automatizados de API usando Postman Collection e Newman",
+  "main": "index.js",
+  "scripts": {
+    "test": "newman run postman/collection.json -r htmlextra,json,cli --reporter-htmlextra-export newman/reports/report.html --reporter-json-export newman/reports/report.json",
+    "test:verbose": "newman run postman/collection.json -r htmlextra,json,cli --reporter-htmlextra-export newman/reports/report.html --reporter-json-export newman/reports/report.json --verbose",
+    "test:ci": "newman run postman/collection.json -r json,cli --reporter-json-export newman/reports/report.json --bail"
+  },
+  "keywords": [
+    "api",
+    "testing",
+    "postman",
+    "newman",
+    "automation",
+    "jsonplaceholder"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "newman": "^6.1.1",
+    "newman-reporter-htmlextra": "^1.23.0"
+  }
+}
